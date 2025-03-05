@@ -1,18 +1,72 @@
+@font-face {
+  font-family: 'MainFont';
+  src: url('./assets/fonts/Lora.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TitleFont';
+  src: url('./assets/fonts/Montserrat-VariableFont_wght.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
+  --font-primary: 'MainFont', serif;
+  --font-title: 'TitleFont', sans-serif;
+  --color-primary: rgb(51, 51, 51);
+  --color-card: rgb(255, 255, 255);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(250, 250, 250);
+  font-family: var(--font-primary);
+  color: var(--color-primary);
+}
+
+.App header,
+.App main {
+  width: 100%;
+  padding: 20px 110px;
+  box-sizing: border-box;
+  background-color: rgb(250, 250, 250);
+}
+
+.App footer {
+  width: 100%;
+  padding: 20px 110px;
+  box-sizing: border-box;
+  background-color: rgb(46, 50, 51);
+  color: rgb(255, 255, 255);
+}
+
+h2 {
+  font-family: var(--font-title);
+  font-size: 34px;
+  letter-spacing: 1.2px;
+}
+
+@media (min-width: 1440px) {
+  .App {
+    background-color: rgb(250, 250, 250);
+  }
+
+  .App header,
+  .App main,
+  .App footer {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+}
+
+/* 
 a {
   font-weight: 500;
   color: #646cff;
@@ -65,4 +119,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
+} */
