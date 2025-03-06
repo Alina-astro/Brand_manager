@@ -1,0 +1,51 @@
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.nav-menu {
+    width: 108px;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 0.34em;
+    text-align: center;
+}
+
+.nav-icons {
+    display: flex;
+    justify-content: space-between;
+    width: 108px;
+}
+
+.icon {
+    width: 22px;
+    height: 22px;
+    transition: all 0.3s ease;
+}
+
+.icon img {
+    width: 100%;
+    height: 100%;
+}
+
+.icon:hover {
+    transform: scale(1.4);
+    box-shadow: 0 2px 4px rgba(87, 98, 100, 0.3);
+}
+
+.emailIcon:hover img {
+    content: url('../../assets/icons/nav-email-hover.png');
+}
+
+.whatsappIcon:hover img {
+    content: url('../../assets/icons/nav-whatsapp-hover.png');
+}
+
+.telegramIcon:hover img {
+    content: url('../../assets/icons/nav-telegram-hover.png');
+}

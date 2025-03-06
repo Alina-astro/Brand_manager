@@ -50,7 +50,8 @@ body {
 h2 {
   font-family: var(--font-title);
   font-size: 34px;
-  letter-spacing: 1.2px;
+  font-weight: 400;
+  letter-spacing: 0.20em;
 }
 
 @media (min-width: 1440px) {
