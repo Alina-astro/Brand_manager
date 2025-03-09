@@ -1,9 +1,11 @@
 import "./products.css";
+import React, { useState } from "react";
 import productBranding from "../../assets/images/products/product-1.jpg";
 import productEtiquette from "../../assets/images/products/product-2.jpg";
 import productBusinessEvent from "../../assets/images/products/product-3.jpg";
 import productElegance from "../../assets/images/products/product-4.jpg";
-import React, { useState } from "react";
+import arrowRightIcon from '../../assets/icons/arrow-right.png'
+
 
 const services = [
   {
@@ -45,19 +47,22 @@ const openDesc = (id) => {
     <section className="products">
       <h2>Ваш путь к совершенству</h2>
       <div className="products-grid">
-  {services.map((service) => (
-    <div className="product-card" key={service.id}>
-      <img src={service.image} alt={service.title} className="product-image" />
-      <div 
-        className={`product-overlay ${activeCard === service.id ? "active" : ""}`} 
-        onClick={() => openDesc(service.id)}
-      >
-        <p className="product-title">{service.title}</p>
-        <p className="product-description">{service.description}</p>
+      {services.map((service) => (
+        <div className="product-card" key={service.id}>
+          <img src={service.image} alt={service.title} className="product-image" />
+          <div 
+            className={`product-overlay ${activeCard === service.id ? "active" : ""}`} 
+            onClick={() => openDesc(service.id)}
+          >
+            <p className="product-title">{service.title}</p>
+            <p className="product-description">{service.description}</p>
+          </div>
+        </div>
+      ))}
       </div>
-    </div>
-  ))}
-</div>
+      <div className="products-text">Я провожу как онлайн-консультации, так и личные встречи для удобства клиентов. Длительность и формат зависят от ваших целей и потребностей.</div>
+      <a href="#services" className="button">Подробнее об услугах <img src={arrowRightIcon} className="arrow" alt="arrow right" />
+      </a>
     </section>
   );
 };
