@@ -60,7 +60,7 @@ const openDesc = (id) => {
         </div>
       ))}
       </div>
-      <div className="products-text">Я провожу как онлайн-консультации, так и личные встречи для удобства клиентов. Длительность и формат зависят от ваших целей и потребностей.</div>
+      <div className="block-desc">Я провожу как онлайн-консультации, так и личные встречи для удобства клиентов. Длительность и формат зависят от ваших целей и потребностей.</div>
       <a href="#services" className="button">Подробнее об услугах <img src={arrowRightIcon} className="arrow" alt="arrow right" />
       </a>
     </section>

@@ -27,7 +27,7 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="about-slogan">
+        <div className="block-desc">
         Моя цель — помочь вам раскрыть свой потенциал через продуманный имидж и уверенное позиционирование.
         </div>
       </section>
