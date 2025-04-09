@@ -11,7 +11,9 @@
     width: 100%;
     /* max-width: 800px; */
     margin: 0 auto;
-    font-family: var(--font-title);
+    font-family: var(--font-primary);
+    font-size: 16px;
+    color: var(--color-primary);
   }
   
   .faq-item {
@@ -44,15 +46,19 @@
   }
   
   .faq-answer {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.4s ease;
-    font-size: 16px;
-    color: #333;
-    padding-right: 24px;
+  overflow: hidden;
+  max-height: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+  padding-right: 24px;
   }
-  
-  .faq-item.open .faq-answer {
-    max-height: 200px; /* на 1–2 строки */
-    margin-top: 8px;
+
+  .faq-answer.open {
+    max-height: 400px;
+  }
+
+  .faq-answer p {
+    padding: 0 16px;
+    line-height: 1.5;
   }
