@@ -25,9 +25,12 @@
   --color-primary: rgb(51, 51, 51);
   --color-card: rgb(255, 255, 255);
   --color-line: rgb(102, 102, 102);
+  --color-bg-footer: rgb(46, 50, 51);
+  --color-text-footer: rgb(250, 250, 250);
+  --color-copyright-footer: rgba(232, 236, 236, 0.6);
   --main-padding: 20px 110px;
-  --btn-gradient: linear-gradient(to bottom, #9AA8AC 15%, #505759 100%);
-  --btn-gradient-hover: linear-gradient(to bottom, #9AA8AC 0%, #505759 35%);
+  --btn-gradient: linear-gradient(to bottom, rgb(154, 168, 172) 15%, rgb(80, 87, 89) 100%);
+  --btn-gradient-hover: linear-gradient(to bottom, rgb(154, 168, 172) 0%, rgb(80, 87, 89) 35%);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -51,7 +54,6 @@ body {
 
 .App footer {
   width: 100%;
-  padding: 20px 110px;
   box-sizing: border-box;
   background-color: rgb(46, 50, 51);
   color: rgb(255, 255, 255);
