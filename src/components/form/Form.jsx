@@ -35,14 +35,13 @@ function Form() {
 
     setStatus("Отправка...");
 
+    const query = new URLSearchParams(formData).toString();
+    const url = `${GOOGLE_SCRIPT_URL}?${query}`;
+
     try {
-      const response = await fetch(GOOGLE_SCRIPT_URL, {
-        method: "POST",
+      await fetch(url, {
+        method: "GET",
         mode: "no-cors",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
       });
 
       setFormData({ name: "", email: "", message: "" });
