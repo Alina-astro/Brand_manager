@@ -1,35 +1,31 @@
 import "./products.css";
 import React, { useState } from "react";
-import productBranding from "../../assets/images/products/product-1.jpg";
-import productEtiquette from "../../assets/images/products/product-2.jpg";
-import productBusinessEvent from "../../assets/images/products/product-3.jpg";
-import productElegance from "../../assets/images/products/product-4.jpg";
-import arrowRightIcon from '../../assets/icons/arrow-right.png'
+import { Link } from "react-router-dom";
 
 
 const services = [
   {
     id: 1,
     title: "Персональный брендинг и позиционирование",
-    image: productBranding,
+    image: "/images/products/product-1.jpg",
     description: "Как создать сильный и запоминающийся личный бренд? Мы исследуем ваши ценности, уникальные черты и цели, чтобы разработать стратегию позиционирования, подчеркивающую вашу индивидуальность и профессиональные сильные стороны.",
   },
   {
     id: 2,
     title: "Деловой этикет и культурные особенности",
-    image: productEtiquette,
+    image: "/images/products/product-2.jpg",
     description: "В этих сессиях вы освоите основы делового этикета и понимание культурных различий в профессиональной коммуникации. Я помогу вам научиться правильно подавать себя, чтобы оставлять положительное впечатление и строить эффективные связи в международной среде.",
   },
   {
     id: 3,
     title: "Подготовка к международным бизнес-мероприятиям",
-    image: productBusinessEvent,
+    image: "/images/products/product-3.jpg",
     description: "Собираетесь на важную международную конференцию? Я помогу вам продумать ваш образ и подготовить все детали, чтобы вы уверенно представляли себя и свою компанию.",
   },
   {
     id: 4,
     title: "Основы элегантности и вкуса",
-    image: productElegance,
+    image: "/images/products/product-1.jpg",
     description: "Эти консультации помогут вам создать элегантный и утонченный образ. Мы рассмотрим основы стиля, чтобы вы выглядели безупречно и чувствовали уверенность.",
   },
 ];
@@ -61,8 +57,9 @@ const openDesc = (id) => {
       ))}
       </div>
       <div className="block-desc">Я провожу как онлайн-консультации, так и личные встречи для удобства клиентов. Длительность и формат зависят от ваших целей и потребностей.</div>
-      <a href="#services" className="button">Подробнее об услугах <img src={arrowRightIcon} className="arrow" alt="arrow right" />
-      </a>
+      <Link to="/offerings" className="button">
+  Подробнее об услугах <img src="/icons/arrow-right.png" className="arrow" alt="arrow right" />
+</Link>
     </section>
   );
 };

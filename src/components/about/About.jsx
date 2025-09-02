@@ -1,5 +1,4 @@
 import "./about.css";
-import aboutImage from "../../assets/images/welcome/about-photo.jpg";
 
 const About = () => {
     return (
@@ -7,7 +6,7 @@ const About = () => {
         <h2 className="about-title">Обо мне</h2>
         <div className="about-content">
           <div className="about-image-container">
-            <img src={aboutImage} alt="Алина Попова" className="about-image" />
+          <img src="/images/welcome/about-photo.jpg" alt="Алина Попова" className="about-image" />
           </div>
           <div className="about-text">
             <div className="about-mission">

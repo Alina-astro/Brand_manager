@@ -1,7 +1,5 @@
 import { useState } from 'react';
 import "./faq.css";
-import arrowDown from "../../assets/icons/arrow-down.png";
-import arrowUp from "../../assets/icons/arrow-up.png";
 
 const faqData = [
     { question: 'Как проходит консультация?', 
@@ -52,7 +50,7 @@ function Faq() {
                     <div className="faq-question">
                         <span className="block-desc">{item.question}</span>
                         <span className="arrow">
-                            <img src={openIndex === index ? arrowUp : arrowDown} alt="arrow" />
+                            <img src={openIndex === index ? "/icons/arrow-up.png" : "/icons/arrow-down.png"} alt="arrow" />
                         </span>
                     </div>
                     <div className={`faq-answer ${openIndex === index ? "open" : ""}`}>

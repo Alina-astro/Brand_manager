@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./form.css";
-import formPhoto from "../../assets/images/welcome/feedback-photo.jpg";
 
 const GOOGLE_SCRIPT_URL = import.meta.env.VITE_GOOGLE_SCRIPT_URL;
 
@@ -55,7 +54,7 @@ function Form() {
   return (
     <section className="form-section">
       <h2>Связаться со мной</h2>
-      <div className="form-wrapper" style={{ backgroundImage: `url(${formPhoto})` }}>
+      <div className="form-wrapper" style={{ backgroundImage: 'url("/images/welcome/feedback-photo.jpg")' }}>
         <form onSubmit={handleSubmit} className="form-box">
             <input
               type="text"

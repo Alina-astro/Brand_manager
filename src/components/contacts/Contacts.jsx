@@ -1,10 +1,4 @@
 import "./contacts.css";
-import iconWhatsapp from "../../assets/icons/footer-whatsapp.png";
-import iconInstagram from "../../assets/icons/footer-instagram.png";
-import iconLinkedin from "../../assets/icons/footer-linkedin.png";
-import iconTelegram from "../../assets/icons/footer-telegram.png";
-import iconEmail from "../../assets/icons/footer-email.png";
-import iconLocation from "../../assets/icons/footer-location.png";
 
 export default function Contacts() {
   return (
@@ -14,19 +8,19 @@ export default function Contacts() {
           <p className="footer-title">Я на связи</p>
           <div className="footer-icons">
             <a href="https://wa.me/your_number" target="_blank" rel="noreferrer">
-              <img src={iconWhatsapp} alt="Whatsapp" />
+              <img src="/icons/footer-whatsapp.png" alt="Whatsapp" />
             </a>
             <a href="https://instagram.com/your_profile" target="_blank" rel="noreferrer">
-              <img src={iconInstagram} alt="Instagram" />
+              <img src="/icons/footer-instagram.png" alt="Instagram" />
             </a>
             <a href="https://linkedin.com/in/your_profile" target="_blank" rel="noreferrer">
-              <img src={iconLinkedin} alt="LinkedIn" />
+              <img src="/icons/footer-linkedin.png" alt="LinkedIn" />
             </a>
             <a href="https://t.me/your_username" target="_blank" rel="noreferrer">
-              <img src={iconTelegram} alt="Telegram" />
+              <img src="/icons/footer-telegram.png" alt="Telegram" />
             </a>
             <a href="mailto:your@email.com">
-              <img src={iconEmail} alt="Email" />
+              <img src="/icons/footer-email.png" alt="Email" />
             </a>
           </div>
         </div>
@@ -34,7 +28,7 @@ export default function Contacts() {
         <div className="footer-right">
           <p className="footer-title">Личный прием по записи:</p>
           <div className="footer-location">
-            <img src={iconLocation} alt="Location" />
+            <img src="/icons/footer-location.png" alt="Location" />
             <a
               href="https://maps.app.goo.gl/cXhug7yDGjcP8drA7"
               target="_blank"

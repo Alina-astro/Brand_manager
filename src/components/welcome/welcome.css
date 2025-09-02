@@ -7,7 +7,7 @@
     padding: 0px 110px;
     height: 600px;
     background:
-        url("../../assets/images/welcome/welcome-photo.jpg") no-repeat right center;
+        url("/images/welcome/welcome-photo.jpg") no-repeat right center;
     background-size: contain;
 }
 

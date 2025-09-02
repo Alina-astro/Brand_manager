@@ -1,5 +1,5 @@
 import "./welcome.css";
-import arrowRightIcon from '../../assets/icons/arrow-right.png'
+import { Link } from "react-router-dom";
 
 function Welcome() {
     return (
@@ -9,8 +9,9 @@ function Welcome() {
                 </p>
                 <p className="welcome-text">Сочетая опыт в люксовой индустрии и глубокое понимание персонального брендинга, я помогу вам уверенно представлять себя в деловой и социальной среде, учитывая все тонкости культурных различий и делового этикета.
                 </p>
-                <a href="#services" className="button">Подробнее об услугах <img src={arrowRightIcon} className="arrow" alt="arrow right" />
-                </a>
+                <Link to="/offerings" className="button">
+                    Подробнее об услугах <img src="/icons/arrow-right.png" className="arrow" alt="arrow right" />
+                </Link>
             </div>
         </section>
     );
