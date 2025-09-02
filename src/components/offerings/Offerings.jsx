@@ -25,9 +25,9 @@ function Offerings() {
                 </ul>
               </div>
               <div className="offering-section">
-                <h3>Как проходит консультация?</h3>
+              <h3>Как проходит консультация?</h3>
                 <ul>
-                  {item.format.map((point, i) => <li key={i}>{point}</li>)}
+                    {item.format.map((point, i) => <li key={i}>{point}</li>)}
                 </ul>
               </div>
             </div>
