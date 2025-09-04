@@ -37,15 +37,3 @@ h1 {
     transform: scale(1.4);
     box-shadow: 0 2px 4px rgba(87, 98, 100, 0.3);
 }
-
-.emailIcon:hover img {
-    content: url('../../assets/icons/nav-email-hover.png');
-}
-
-.whatsappIcon:hover img {
-    content: url('../../assets/icons/nav-whatsapp-hover.png');
-}
-
-.telegramIcon:hover img {
-    content: url('../../assets/icons/nav-telegram-hover.png');
-}

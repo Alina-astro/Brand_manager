@@ -8,8 +8,8 @@ function Offerings() {
       <h1 className="offerings-title">Ваш путь к совершенству</h1>
       <div className="offerings-grid">
         {offerings.map((item, index) => (
-          <section key={index} className="offering-card">
-            <div className="offering-image" style={{ backgroundImage: `url(${item.image})` }}></div>
+          <section key={index} className={`offering-card ${index % 2 !== 0 ? 'reverse' : ''}`}>
+            <div className="offering-image"><img src={item.image} alt={item.title} /></div>
             <div className="offering-content">
               <h2 className="offering-heading">{item.title}</h2>
               <div className="offering-section">
